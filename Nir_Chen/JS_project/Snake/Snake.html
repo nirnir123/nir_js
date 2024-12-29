@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="Snake.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <button id="restartButton">Restart Game</button>
+    </div>
+
+    <!-- Custom Game Over Modal -->
+    <div id="gameOverModal" class="modal">
+      <div class="modal-content">
+        <h2>Game Over</h2>
+        <p id="finalScore">Your Score: 0</p>
+        <button id="closeModal">Restart</button>
+      </div>
+    </div>
+
+    <!-- Arrow Panel for Mobile -->
+    <div id="arrowPanel" class="arrow-panel">
+      <button id="upBtn">↑</button>
+      <div>
+        <button id="leftBtn">←</button>
+
+        <button id="rightBtn">→</button>
+      </div>
+      <button id="downBtn">↓</button>
+    </div>
+
+    <script src="Snake.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="Quiz.css" />
+  </head>
+
+  <body>
+    <div class="quiz-container">
+      <h1>Quiz App</h1>
+      <div div id="question-container">
+        <p id="question-number">Question 1 of 10</p>
+        <p id="question-text">Loading question...</p>
+        <button class="answer-button" onclick="answerQuestion(0)">
+          Option 1
+        </button>
+        <button class="answer-button" onclick="answerQuestion(1)">
+          Option 2
+        </button>
+        <button class="answer-button" onclick="answerQuestion(2)">
+          Option 3
+        </button>
+        <button class="answer-button" onclick="answerQuestion(3)">
+          Option 4
+        </button>
+      </div>
+      <div id="result-container" style="display: none">
+        <p id="result-text">You answered X questions correctly!</p>
+        <p id="percentage">You got X% correct!</p>
+        <button onclick="resetQuiz()">Play Again</button>
+      </div>
+    </div>
+
+    <script src="Quiz.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s;
+}
+
+#start-screen {
+  text-align: center;
+}
+
+#start-screen h1 {
+  margin-bottom: 20px;
+}
+
+#start-screen button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#start-screen button:hover {
+  background-color: #0056b3;
+}
+
+#game-container {
+  text-align: center;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.score {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#player1-score {
+  color: red;
+}
+
+#player2-score {
+  color: blue;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card .front {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  transform: rotateY(180deg);
+}
+
+.card .back {
+  background-color: #007bff;
+}
+
+.card.flip .front {
+  transform: rotateY(0deg);
+}
+
+.card.flip .back {
+  transform: rotateY(180deg);
+}
+
+#game-buttons {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#game-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#game-buttons button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 500px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #start-screen h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  #start-screen button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  #game-board {
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 8px;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card .front,
+  .card .back {
+    font-size: 20px;
+  }
+
+  #scoreboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .score {
+    font-size: 14px;
+  }
+
+  #game-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #game-buttons button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}

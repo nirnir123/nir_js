@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.game-container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#turn-indicator {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.cell.taken {
+  cursor: not-allowed;
+}
+
+.cell.x {
+  color: red;
+}
+
+.cell.o {
+  color: blue;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#score {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#restart,
+#reset-score {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body.red-turn {
+  background-color: #ffdddd;
+}
+
+body.blue-turn {
+  background-color: #ddddff;
+}
+
+@media (max-width: 500px) {
+  #board {
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    gap: 3px;
+  }
+
+  .cell {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #turn-indicator {
+    font-size: 16px;
+  }
+
+  #result {
+    font-size: 16px;
+  }
+
+  #restart,
+  #reset-score {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
+
+.cell.x {
+    color: red;
+}
+
+.cell.o {
+    color: blue;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#restart,
+#reset-score {
+    width: 150px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body.red-turn {
+    background-color: #ffdddd;
+}
+
+body.blue-turn {
+    background-color: #ddddff;
+}
+
+
+
+#turn-indicator {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#score {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+} */

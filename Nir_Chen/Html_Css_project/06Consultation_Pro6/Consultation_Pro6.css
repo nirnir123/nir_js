@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    direction: rtl;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 70%;
+}
+
+.image-section {
+    flex: 1;
+    transform: translateY(-80px);
+}
+
+.image {
+
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.form-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+
+    transform: translateY(-30px);
+}
+
+.form_controller {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.name_email {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+h1 {
+    margin-bottom: 10px;
+    font: normal normal 900 66px/97px Heebo;
+    color: #FDBD03;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #020253;
+}
+
+.lable-container {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2C2C2C;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+
+    border-bottom: 3px solid #FDBD03;
+    background-color: #E5EEFF;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+
+    height: 100px;
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border: 1px solid #ffffff;
+    border-bottom: 3px solid #FDBD03;
+    background-color: #E5EEFF;
+}
+
+button {
+    padding: 10px 40px;
+    background-color: #FDBD03;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+.top-right-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 13px;
+    background-color: #FDBD03;
+}
+
+.bottom-left-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 750px;
+    height: 13px;
+    background-color: #FDBD03;
+}
+
+
+
+
+
+
+
+
+.icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 5px;
+    font-size: 36px;
+
+    background-color: #FDBD03;
+}
+
+.whatsapp {
+    background-color: #FDBD03;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.bottom-icons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+
+    font-size: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+
+    .image {
+        margin-top: 30px;
+        width: 100px;
+    }
+
+    .name_email {
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .whatsapp {
+
+        display: none;
+    }
+
+    .bottom-icons {
+        bottom: 10px;
+        left: 20%;
+        gap: 10px;
+
+
+    }
+
+    .top-right-bar {
+        width: 300px;
+        height: 8px;
+    }
+
+
+    .bottom-left-bar {
+        width: 500px;
+        height: 8px;
+    }
+
+
+
+    .image-section {
+        transform: translateY(-50px);
+    }
+
+    .form-section {
+        padding: 10px;
+        transform: translateY(-20px);
+
+    }
+
+    p,
+    label {
+        font-size: 14px;
+    }
+
+    input,
+    textarea,
+    button {
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 8px 20px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

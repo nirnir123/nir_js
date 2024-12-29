@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    background-image: linear-gradient(180deg, #281eff 0%, #2dff8c 100%);
+    margin: auto;
+    height: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+
+
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#container {
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+h1 {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 8rem;
+    margin: 0 0 10px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+p {
+    font-size: 1em;
+    margin: 10px 0 20px;
+    color: #ffffff;
+}
+
+
+
+#container-form form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+.field {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+label {
+    font-size: 1em;
+    color: #ffffff;
+
+
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+
+    box-sizing: border-box;
+
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+}
+
+
+#button {
+    width: 130px;
+    padding: 10px;
+    font-size: 1em;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+        padding-bottom: 60px;
+    }
+
+    #container-form form {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #button {
+        width: 100%;
+
+    }
+
+    #br {
+        display: none;
+    }
+}

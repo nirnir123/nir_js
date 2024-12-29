@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="Memory_Card.css" />
+  </head>
+
+  <body>
+    <div id="start-screen">
+      <h1>Memory Card Game</h1>
+      <button id="one-player">1 Player</button>
+      <button id="two-players">2 Players</button>
+    </div>
+
+    <div id="game-container" style="display: none">
+      <div id="scoreboard" style="display: none">
+        <div id="player1-score" class="score">
+          Player 1: <span id="score1">0</span>
+        </div>
+        <div id="player2-score" class="score">
+          Player 2: <span id="score2">0</span>
+        </div>
+      </div>
+      <div id="game-buttons">
+        <button id="reset-scores">Reset Scores</button>
+        <button id="reset-button">Reset Game</button>
+        <button id="return-to-mode">Return to Mode Selection</button>
+      </div>
+      <div id="game-board"></div>
+    </div>
+
+    <script src="Memory_Card.js"></script>
+  </body>
+</html>
